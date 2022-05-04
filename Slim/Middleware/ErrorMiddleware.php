@@ -27,34 +27,16 @@ use function is_subclass_of;
 
 class ErrorMiddleware implements MiddlewareInterface
 {
-    /**
-     * @var CallableResolverInterface
-     */
     protected CallableResolverInterface $callableResolver;
 
-    /**
-     * @var ResponseFactoryInterface
-     */
     protected ResponseFactoryInterface $responseFactory;
 
-    /**
-     * @var bool
-     */
     protected bool $displayErrorDetails;
 
-    /**
-     * @var bool
-     */
     protected bool $logErrors;
 
-    /**
-     * @var bool
-     */
     protected bool $logErrorDetails;
 
-    /**
-     * @var LoggerInterface|null
-     */
     protected ?LoggerInterface $logger;
 
     /**

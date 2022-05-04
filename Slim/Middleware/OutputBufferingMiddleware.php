@@ -28,14 +28,8 @@ class OutputBufferingMiddleware implements MiddlewareInterface
     public const APPEND = 'append';
     public const PREPEND = 'prepend';
 
-    /**
-     * @var StreamFactoryInterface
-     */
     protected StreamFactoryInterface $streamFactory;
 
-    /**
-     * @var string
-     */
     protected string $style;
 
     /**
