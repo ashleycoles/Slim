@@ -31,12 +31,12 @@ class OutputBufferingMiddleware implements MiddlewareInterface
     /**
      * @var StreamFactoryInterface
      */
-    protected $streamFactory;
+    protected StreamFactoryInterface $streamFactory;
 
     /**
      * @var string
      */
-    protected $style;
+    protected string $style;
 
     /**
      * @param StreamFactoryInterface $streamFactory
