@@ -27,12 +27,12 @@ class RoutingMiddleware implements MiddlewareInterface
     /**
      * @var RouteResolverInterface
      */
-    protected $routeResolver;
+    protected RouteResolverInterface $routeResolver;
 
     /**
      * @var RouteParserInterface
      */
-    protected $routeParser;
+    protected RouteParserInterface $routeParser;
 
     /**
      * @param RouteResolverInterface $routeResolver
